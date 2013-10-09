@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YMViewController : UIViewController
+@interface YMViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+//subView to contain the tableview
+@property (weak, nonatomic) IBOutlet UIView *tableViewContainingView;
+@property (weak, nonatomic) IBOutlet UITableView *weeklyGoalProgressTableView;
 
 @end
